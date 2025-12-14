@@ -1,1 +1,9 @@
-# BioMed
+https://dipgame.github.io/BioMed/
+https://dipgame.github.io/BioMed/about.html
+https://dipgame.github.io/BioMed/blog-detail.html
+https://dipgame.github.io/BioMed/contacts.html
+https://dipgame.github.io/BioMed/laborat.html
+https://dipgame.github.io/BioMed/laborat-detail.html
+https://dipgame.github.io/BioMed/science.html
+https://dipgame.github.io/BioMed/services.html
+https://dipgame.github.io/BioMed/trainer.html

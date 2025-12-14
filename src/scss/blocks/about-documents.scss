@@ -1,0 +1,87 @@
+.about-documents {
+    padding: 60px 0;
+
+    .h2 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.about-documents-grid-item {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+    border: 1px solid #E5E5E5;
+    border-radius: 8px;
+    position: relative;
+
+    &:hover {
+        border: none;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+            padding: 1px;
+            background: linear-gradient(261.08deg, #03B0B6 18.88%, #B9DE35 127.89%);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+    }
+}
+
+.about-documents-grid-item-svg_icon {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F7FA;
+    border-radius: 6px;
+
+    img {
+        max-width: 30px;
+        max-height: 30px;
+        min-height: 30px;
+        min-width: 30px;
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-struction-grid.about-documents-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .about-documents {
+        padding: 60px 0;
+
+        .h2 {
+            font-size: 40px;
+            margin-bottom: 40px;
+        }
+    }
+//Продолжай адаптацию для мобильных устройств
+    .about-documents-grid-item {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+        border: 1px solid #E5E5E5;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .about-documents-grid-item-text {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,180 @@
+.science-grid-item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    padding: 30px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 20px;
+        padding: 1px;
+        background: linear-gradient(261.08deg, #E5E5E5 18.88%, #E5E5E5 127.89%);
+        -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        pointer-events: none;
+    }
+
+    &:hover {
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            padding: 1px;
+            background: linear-gradient(261.08deg, #03B0B6 18.88%, #B9DE35 127.89%);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+    }
+
+    .img {
+        max-width: 80px;
+        max-height: 80px;
+        min-height: 80px;
+        min-width: 80px;
+        padding: 17px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            aspect-ratio: 1/1;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 50%;
+            padding: 1px;
+            background: linear-gradient(261.08deg, #03B0B6 18.88%, #B9DE35 127.89%);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+    }
+
+
+}
+
+.science-grid-item-content {
+
+    .h2 {
+        font-weight: 600;
+        font-style: SemiBold;
+        font-size: 20px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        margin-bottom: 20px;
+    }
+
+    .default {
+        color: #50576B;
+        font-family: Inter;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        margin: 0;
+
+        * {
+            font-family: Inter;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+        }
+    }
+
+    .button {
+        margin-top: 20px;
+        max-width: 128px;
+        height: 40px;
+        min-height: 40px;
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 16px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        color: var(--text-color);
+        background: none;
+        position: relative;
+        transition: 0s !important;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 8px;
+            padding: 1px;
+            background: linear-gradient(261.08deg, #03B0B6 18.88%, #B9DE35 127.89%);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+
+        &:hover {
+            background: linear-gradient(264.61deg, #03B0B6 2.22%, #B9DE35 170.77%);
+
+            &::before {
+                opacity: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .services-grid.science-grid {
+        gap: 16px;
+    }
+
+    .science-grid-item {
+        padding: 30px 20px;
+    }
+
+    .science-grid-item-content {
+
+        .default {
+            font-size: 14px;
+
+            * {
+                font-size: 14px;
+            }
+        }
+    }
+}

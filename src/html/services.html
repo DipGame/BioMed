@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioMed</title>
+    <link rel="stylesheet" href="./fonts/Inter.css" />
+    <link rel="stylesheet" href="./fonts/Onest.css" />
+
+    <link rel="icon" href="./img/favicon.ico" type="image/svg+xml">
+
+    <link rel="stylesheet" href="./css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU"
+        type="text/javascript"></script>
+
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.fancybox.js"></script>
+    <script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+    <div class="invise" id="isAdmin"></div>
+
+    @@include('blocks/overlay.html')
+    @@include('blocks/popup-form.html')
+    @@include('blocks/popupCheck.html')
+    @@include('blocks/load.html')
+    @@include('blocks/header.html')
+    <main>
+
+        <div class="bread flex padding " id="bread">
+            <ul class="def_div">
+                <li> <a href="/" title="Главная" itemprop="item">Главная</a></li>
+                <li class="fix-opacity">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.5 5L12.5 10L7.5 15" stroke="#D1D5DB" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </li>
+                <li class="fix-opacity"> Услуги
+                </li>
+            </ul>
+        </div>
+        <h1 class="title">
+            Услуги
+        </h1>
+
+        @@include('blocks/services.html')
+
+    </main>
+    @@include('blocks/footer.html')
+    <script src="./js/addSwiper.js"></script>
+    <script src="./js/copyElements.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/map.js"></script>
+</body>
+
+</html>

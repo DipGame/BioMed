@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>BioMed</title>
+	<link rel="stylesheet" href="./fonts/Inter.css" />
+	<link rel="stylesheet" href="./fonts/Onest.css" />
+
+	<link rel="icon" href="./img/favicon.ico" type="image/svg+xml">
+
+	<link rel="stylesheet" href="./css/jquery.fancybox.css" />
+	<link rel="stylesheet" href="./css/swiper-bundle.css" />
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=2e485074-4e7a-4d9b-9e83-432aa96ddebf&lang=ru_RU"
+		type="text/javascript"></script>
+
+	<script src="./js/jquery-3.7.1.min.js"></script>
+	<script src="./js/jquery.fancybox.js"></script>
+	<script src="./js/swiper-bundle.js"></script>
+</head>
+
+<body>
+	<div class="invise" id="isAdmin"></div>
+
+	@@include('blocks/overlay.html')
+	@@include('blocks/popup-form.html')
+	@@include('blocks/popupCheck.html')
+	@@include('blocks/load.html')
+	@@include('blocks/header.html')
+	<main>
+		<h1 class="title invise">
+			BioMed
+		</h1>
+
+		@@include('blocks/main-banner.html')
+		@@include('blocks/main-about.html')
+		@@include('blocks/main-map.html')
+
+	</main>
+	@@include('blocks/footer.html')
+	<script src="./js/addSwiper.js"></script>
+	<script src="./js/copyElements.js"></script>
+	<script src="./js/index.js"></script>
+	<script src="./js/map.js"></script>
+</body>
+
+</html>

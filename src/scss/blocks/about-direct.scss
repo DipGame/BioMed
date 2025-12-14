@@ -1,0 +1,107 @@
+.about-direct {
+    margin: 60px auto 80px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #F2F7FA;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-direct-img {
+    width: 100%;
+    max-width: 286px;
+    aspect-ratio: 286/355;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+}
+
+.about-direct-content {
+    width: 100%;
+    max-width: 924px;
+}
+
+.about-direct-name {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 40px;
+    leading-trim: NONE;
+    line-height: 110.00000000000001%;
+    letter-spacing: 0%;
+    margin-bottom: 20px;
+}
+
+.about-direct-profession {
+    font-family: Onest;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #50576B;
+    margin-bottom: 40px;
+}
+
+.about-direct-text-container {
+    display: flex;
+    gap: 20px;
+}
+
+.about-direct-cov {
+  transform: translateY(5px);
+
+  svg {
+    max-width: 25px;
+    max-height: 25px;
+    min-height: 25px;
+    min-width: 25px;
+  }
+}
+
+.about-direct-text {
+    margin: 0;
+}
+
+@media (max-width: 970px) {
+    .about-direct {
+        align-items: start;
+    }
+}
+
+@media (max-width: 720px) {
+    .about-direct {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-direct {
+        margin: 60px auto;
+        padding: 16px;
+        gap: 30px;
+    }
+    
+    .about-direct-img {
+        width: 100%;
+        max-width: 343px;
+        aspect-ratio: 343/424;
+    }
+    
+    .about-direct-name {
+        font-size: 30px;
+    }
+    
+    .about-direct-profession {
+        font-size: 16px;
+    }
+    
+    .about-direct-text-container {
+        display: flex;
+        gap: 20px;
+    }
+    
+}

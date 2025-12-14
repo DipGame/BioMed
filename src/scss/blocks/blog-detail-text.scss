@@ -1,0 +1,16 @@
+.blog-detail-text {
+    padding: 40px 0 96px;
+    margin: 0 auto;
+    gap: 20px;
+    max-width: 900px;
+
+    a {
+        color: #03B0B6;
+    }
+}
+
+@media (max-width: 500px) {
+    .blog-detail-text {
+        padding: 40px 0;
+    }
+}

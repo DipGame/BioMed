@@ -1,0 +1,132 @@
+.main-map-section {
+    position: relative;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.main-map {
+    padding: 20px 0;
+}
+
+.main-map-content {
+    width: 100%;
+    max-width: 548px;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+
+    .h2 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 40px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: -2%;
+        margin-bottom: 150px;
+    }
+}
+
+.main-map-content-text-list {
+    display: flex;
+    flex-direction: column;
+
+    li {
+        padding: 13px 0;
+        display: grid;
+        grid-template-columns: 110px 1fr;
+        gap: 8px;
+        border-bottom: 1px solid #E5E5E5;
+
+        span {
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: #676A83;
+        }
+
+        a,
+        p {
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 16px;
+            leading-trim: NONE;
+            line-height: 150%;
+            letter-spacing: 0%;
+        }
+    }
+}
+
+@media (max-width: 1370px) {
+    #map {
+        position: static;
+        height: auto;
+    }
+
+    .main-map-section {
+        padding: 0;
+    }
+
+    .main-map-content {
+        max-width: none;
+    }
+}
+
+@media (max-width: 970px) {
+    .main-map-section {
+        flex-direction: column;
+    }
+
+    #map {
+        height: 345px;
+    }
+}
+
+@media (max-width: 500px) {
+    #map {
+        height: 100%;
+        position: absolute;
+
+    }
+
+    .main-map-section {
+        padding-top: 345px;
+    }
+
+    .main-map {
+        padding: 0;
+    }
+
+    .main-map-content {
+        border-radius: 20px 20px 0 0;
+    }
+
+    .main-map {
+        padding: 0;
+    }
+
+    .main-map-content {
+        padding: 40px 20px;
+
+        .h2 {
+            font-size: 30px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .main-map-content-text-list {
+        li {
+            grid-template-columns: 90px 1fr;
+        }
+    }
+}

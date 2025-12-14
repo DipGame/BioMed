@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Onest';
+    src: url('Onest-Medium.eot');
+    src: local('Onest Medium'), local('Onest-Medium'),
+        url('Onest-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Onest-Medium.woff2') format('woff2'),
+        url('Onest-Medium.woff') format('woff'),
+        url('Onest-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('Onest-SemiBold.eot');
+    src: local('Onest SemiBold'), local('Onest-SemiBold'),
+        url('Onest-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Onest-SemiBold.woff2') format('woff2'),
+        url('Onest-SemiBold.woff') format('woff'),
+        url('Onest-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('Onest-Regular.eot');
+    src: local('Onest Regular'), local('Onest-Regular'),
+        url('Onest-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Onest-Regular.woff2') format('woff2'),
+        url('Onest-Regular.woff') format('woff'),
+        url('Onest-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

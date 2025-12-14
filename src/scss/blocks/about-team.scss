@@ -1,0 +1,124 @@
+.about-team {
+    padding: 0 0 80px;
+
+    .h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+}
+
+.about-team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.about-team-grid-item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    aspect-ratio: 324/449;
+    cursor: pointer;
+
+    &:hover {
+        .about-team-grid-item-content {
+            background: linear-gradient(261.08deg, #03B0B6 18.88%, #B9DE35 127.89%);
+            * {
+                color: #FFF !important;
+            }
+        }
+    }
+}
+
+.about-team-grid-item-content {
+    background: #F2F7FAE5;
+    border-radius: 12px;
+    padding: 12px 16px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-team-grid-item-content-name {
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+}
+
+.about-team-grid-item-content-profession {
+    color: #50576B;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: -1%;
+}
+
+@media (max-width: 970px) {
+    .about-team-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 720px) {
+    .about-team-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .about-team .h2 {
+        font-size: 30px;
+    }
+
+    .about-team {
+        padding: 0 0 40px;
+    
+        .h2 {
+            margin-bottom: 30px;
+        }
+    }
+    
+    .about-team-grid {
+        display: grid;
+        gap: 8px;
+    }
+    
+    .about-team-grid-item {
+        border-radius: 12px;
+        padding: 4px;
+        aspect-ratio: 167/232;
+        cursor: pointer;
+    }
+    
+    .about-team-grid-item-content {
+        border-radius: 10px;
+        padding: 12px 8px;
+        gap: 8px;
+    }
+    
+    .about-team-grid-item-content-name {
+        font-size: 14px;
+    }
+    
+    .about-team-grid-item-content-profession {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 374px) {
+    .about-team-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

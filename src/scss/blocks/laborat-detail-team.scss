@@ -1,0 +1,28 @@
+.laborat-detail-team {
+    padding: 60px 0 100px;
+
+    .h2 {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .laborat-detail-team {
+        .h2 {
+            font-size: 30px;
+        }
+
+        .about-team-grid {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+        }
+
+        .about-team-grid-item-content-name {
+            font-size: 20px;
+        }
+
+        .about-team-grid-item-content-profession {
+            font-size: 14px;
+        }
+    }
+}

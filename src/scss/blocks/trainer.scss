@@ -1,0 +1,130 @@
+.trainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 20px;
+    background-color: #F2F7FA;
+    padding: 40px;
+
+    .h2 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 32px;
+        leading-trim: NONE;
+        line-height: 130%;
+        letter-spacing: -2%;
+    }
+}
+
+.trainer-flex {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.trainer-left {
+    min-height: 380px;
+    width: 100%;
+    max-width: 509px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    height: auto;
+}
+
+.trainer-right {
+    width: 100%;
+    max-width: 711px;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background-color: #FFF;
+            border-radius: 12px;
+            padding: 20px 30px;
+
+            .h3 {
+                font-weight: 600;
+                font-style: SemiBold;
+                font-size: 20px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+            }
+
+            .default {
+                margin: 0;
+                color: #50576B;
+                font-weight: 400;
+                font-style: Regular;
+                font-size: 14px;
+                leading-trim: NONE;
+                line-height: 140%;
+                letter-spacing: 0%;
+
+                * {
+                    color: #50576B;
+                    font-weight: 400;
+                    font-style: Regular;
+                    font-size: 14px;
+                    leading-trim: NONE;
+                    line-height: 140%;
+                    letter-spacing: 0%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .trainer-flex {
+        flex-direction: column;
+    }
+
+    .trainer-left, .trainer-right {
+        max-width: 100%;
+    }
+
+    .trainer-section {
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .trainer {
+        padding: 40px 20px;
+    
+        .h2 {
+            font-size: 24px;
+        }
+    }
+    
+    .trainer-flex {
+        gap: 20px;
+    }
+    
+    .trainer-left {
+        min-height: auto;
+        aspect-ratio: 335/250;
+    }
+    
+    .trainer-right {
+        ul {
+    
+            li {
+                padding: 20px;
+    
+                .h3 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

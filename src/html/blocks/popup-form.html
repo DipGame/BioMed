@@ -1,0 +1,79 @@
+<div class="popupForm form-all " id="popup-call-back">
+    <form class="popup__container form">
+        <svg class="close-btn" width="60" height="60" viewBox="0 0 60 60" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <rect width="60" height="60" fill="none" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M27.5843 30L10 12.4157L12.4157 10L30 27.5843L47.5844 10L50 12.4157L32.4157 30L49.9436 47.5263L47.5263 49.9436L30 32.4157L12.4157 50L10 47.5844L27.5843 30Z"
+                fill="#162230" />
+        </svg>
+        <div class="popupForm-title">
+            Отклик на вакансию
+        </div>
+
+        <div class="inputs_cont">
+            <div class="input_cont">
+                <div class="input_cont-name">
+                    ФИО
+                </div>
+                <input type="text" name="name" placeholder="Иванов Иван Иванович">
+            </div>
+        </div>
+        <div class="inputs_cont">
+            <div class="input_cont">
+                <div class="input_cont-name">
+                    Телефон
+                </div>
+                <input type="text" name="phone" placeholder="Ваш номер телефона">
+            </div>
+            <div class="input_cont">
+                <div class="input_cont-name">
+                    Email
+                </div>
+                <input type="email" name="email" placeholder="example@mail.com">
+            </div>
+        </div>
+        <div class="inputs_cont">
+            <div class="input_cont">
+                <div class="input_cont-name">
+                    Вакансия
+                </div>
+                <input type="text" name="vacancy" placeholder="">
+            </div>
+        </div>
+        <div class="inputs_cont">
+            <div class="input_cont">
+                <div class="input_cont-name">
+                    Короткое сообщение
+                </div>
+
+                <textarea name="message" id="message" maxlength="300" rows="4"></textarea>
+            </div>
+        </div>
+
+        <div class="file_cont" data-file>
+            <div class="file_cont-name">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M12 12V21M12 12L16 16M12 12L8 16M3.88241 15C2.71469 13.7255 2 12.014 2 10.1324C2 6.19327 5.13205 3 8.99563 3C12.2933 3 15.2243 5.25206 15.9635 8.38285C18.2974 7.51676 20.8781 8.74367 21.7276 11.1232C22.4501 13.1471 21.6876 15.3529 20.0075 16.5"
+                        stroke="#25B99F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+                <p>
+                    Прикрепите ваше резюме <span>Выбрать файл</span>
+                </p>
+            </div>
+            <input class="invise" type="file" name="resume" id="resume">
+        </div>
+
+        <div class="checkbox v2" data-processing="">
+            <div class="check-box-btn"> <img class="check" src="./img/Checked.svg" alt="check"></div>
+            <p>
+                Я согласен(а) с <a href=""> политикой конфиденциальности сайта </a>
+            </p>
+        </div>
+        <button class="button" type="submit">
+            Отправить
+        </button>
+    </form>
+</div>

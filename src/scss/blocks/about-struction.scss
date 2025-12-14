@@ -1,0 +1,119 @@
+.about-struction {
+    padding: 0 0 30px;
+
+    .h2 {
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+.about-struction-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.about-struction-grid-item {
+    border: 1px solid #E5E5E5;
+    border-radius: 10px;
+    padding: 20px 30px 30px;
+    position: relative;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img {
+        max-width: 40px;
+        max-height: 40px;
+        min-height: 40px;
+        min-width: 40px;
+        margin-bottom: 20px;
+    }
+
+    .h3 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 18px;
+        leading-trim: NONE;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .default {
+        color: #50576B;
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 14px;
+        leading-trim: NONE;
+        line-height: 140%;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 0;
+
+        * {
+            color: #50576B;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 14px;
+            leading-trim: NONE;
+            line-height: 140%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+
+    &.v2 {
+        border: none;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+            padding: 1px;
+            background: linear-gradient(261.08deg, #03B0B6 18.88%, #B9DE35 127.89%);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+    }
+}
+
+@media (max-width: 970px) {
+    .about-struction-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+
+    .about-struction .h2 {
+        font-size: 30px;
+    }
+
+    .about-struction-section {
+        padding: 0;
+    }
+
+    .about-struction-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-struction-grid {
+        gap: 16px;
+    }
+    
+    .about-struction-grid-item {
+        padding: 20px 20px 30px;
+    }
+}

@@ -1,0 +1,55 @@
+.about-banner-section {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .h2 {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 56px;
+        leading-trim: NONE;
+        line-height: 110.00000000000001%;
+        letter-spacing: -2%;
+        text-align: center;
+        color: #FFF;
+        z-index: 2;
+        position: relative;
+    }
+
+    &::before {
+        content: '';
+        background: linear-gradient(253.8deg, rgba(22, 34, 48, 0.1) 39.34%, rgba(22, 34, 48, 0.2) 81.35%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 970px) {
+    .about-banner-section .h2 {
+        font-size: 52px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-banner-section {
+        min-height: 400px;
+        justify-content: start;
+
+        .h2 {
+            font-size: 48px;
+            text-align: start;
+        }
+    }
+
+}
